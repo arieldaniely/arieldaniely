@@ -35,9 +35,8 @@
 
 <p dir="ltr" align="right">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://helio-github-stats.vercel.app/api?username=arieldaniely&amp;hide_rank=false&amp;show_icons=true&amp;hide_border=true&amp;border_radius=8&amp;theme=github_dark&amp;title_color=7ba9c9&amp;icon_color=7ba9c9&amp;ring_color=7ba9c9" />
-    <img alt="נתוני הפעילות והדירוג של arieldaniely ב־GitHub" src="https://helio-github-stats.vercel.app/api?username=arieldaniely&amp;hide_rank=false&amp;show_icons=true&amp;hide_border=true&amp;border_radius=8&amp;theme=default" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://vercel.app" />
+    <img alt="נתוני הפעילות והדירוג של arieldaniely ב־GitHub" src="https://vercel.app" />
   </picture>
 </p>
 
-</div>
