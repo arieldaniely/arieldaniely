@@ -34,7 +34,14 @@
 ### פעילות ב־GitHub
 
 <!-- PROFILE-STATS:START -->
-<sub>כרטיס הדירוג הכולל מאגרים פרטיים יופיע כאן לאחר הפעלת ההרשאה.</sub>
+<p dir="ltr" align="right">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=arieldaniely&amp;hide_rank=false&amp;show_icons=true&amp;hide_border=true&amp;include_all_commits=false&amp;theme=github_dark" />
+    <img alt="פעילות ודירוג ב־GitHub לפי נתונים ציבוריים" src="https://github-stats-extended.vercel.app/api?username=arieldaniely&amp;hide_rank=false&amp;show_icons=true&amp;hide_border=true&amp;include_all_commits=false&amp;theme=default" />
+  </picture>
+</p>
+
+<sub>כרגע מוצגים נתונים ציבוריים בלבד. לאחר הפעלת ההרשאה, החישוב יכלול גם מאגרים פרטיים.</sub>
 <!-- PROFILE-STATS:END -->
 
 </div>
