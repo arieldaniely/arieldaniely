@@ -36,12 +36,12 @@
 <!-- PROFILE-STATS:START -->
 <p dir="ltr" align="right">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-stats-extended.vercel.app/api?username=arieldaniely&amp;hide_rank=false&amp;show_icons=true&amp;hide_border=true&amp;include_all_commits=false&amp;theme=github_dark" />
-    <img alt="פעילות ודירוג ב־GitHub לפי נתונים ציבוריים" src="https://github-stats-extended.vercel.app/api?username=arieldaniely&amp;hide_rank=false&amp;show_icons=true&amp;hide_border=true&amp;include_all_commits=false&amp;theme=default" />
+    <source media="(prefers-color-scheme: dark)" srcset="profile/stats-dark.svg" />
+    <img alt="הפעילות והדירוג ב־GitHub, כולל מאגרים פרטיים הזמינים להרשאה" src="profile/stats-light.svg" />
   </picture>
 </p>
 
-<sub>כרגע מוצגים נתונים ציבוריים בלבד. לאחר הפעלת ההרשאה, החישוב יכלול גם מאגרים פרטיים.</sub>
+<sub>החישוב כולל מאגרים ציבוריים ופרטיים הזמינים להרשאה. מוצגים נתונים מצטברים בלבד.</sub>
 <!-- PROFILE-STATS:END -->
 
 </div>
