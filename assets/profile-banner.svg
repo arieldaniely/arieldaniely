@@ -1,26 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title desc">
-  <title id="title">אריאל דניאלי — כלים שהופכים ידע לנגיש ושימושי</title>
-  <desc id="desc">A navy banner with blue and teal accents and an abstract book and search symbol.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d1527"/><stop offset="1" stop-color="#152b42"/></linearGradient>
-    <linearGradient id="accent"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#5eead4"/></linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#94a3b8" stroke-opacity=".07"/></pattern>
-  </defs>
-  <rect width="1280" height="320" rx="18" fill="url(#bg)"/>
-  <rect width="1280" height="320" rx="18" fill="url(#grid)"/>
-  <rect x="1170" y="62" width="46" height="4" rx="2" fill="url(#accent)"/>
-  <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="1216" y="114" text-anchor="end" direction="rtl" fill="#8bb6cf" font-size="15" letter-spacing="0">לימוד · חיפוש · כלים שימושיים</text>
-    <text x="1216" y="180" text-anchor="end" direction="rtl" fill="#f1f5f9" font-size="54" font-weight="700">אריאל דניאלי</text>
-    <text x="1216" y="222" text-anchor="end" direction="rtl" fill="#b9c9da" font-size="21">כלים שהופכים ידע לנגיש ושימושי.</text>
-    <text x="1216" y="276" text-anchor="end" direction="rtl" fill="#72d9ce" font-size="15" letter-spacing="0">עברית ו־RTL  /  חיפוש סמנטי  /  יישומי מחשב ודפדפן</text>
-  </g>
-  <g transform="translate(245 160)" fill="none">
-    <circle r="104" stroke="#60a5fa" stroke-opacity=".13"/>
-    <circle r="80" stroke="#5eead4" stroke-opacity=".18"/>
-    <path d="M-60-38Q-30-52 0-35Q30-52 60-38V39Q30 25 0 42Q-30 25-60 39Z" stroke="url(#accent)" stroke-width="3" stroke-linejoin="round"/>
-    <path d="M0-35V42M-45-20Q-28-25-15-20M-45-4Q-28-9-15-4M15-20Q32-25 45-20M15-4Q32-9 45-4" stroke="#88b7cc" stroke-width="2" stroke-linecap="round"/>
-    <circle cx="39" cy="33" r="24" fill="#152b42" stroke="#5eead4" stroke-width="3"/>
-    <path d="M56 51L77 72" stroke="#5eead4" stroke-width="5" stroke-linecap="round"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="240" viewBox="0 0 1280 240" role="img" aria-labelledby="title">
+<title id="title">אריאל דניאלי — פיתוח תוכנה, חיפוש ועיבוד טקסט</title>
+<rect width="1280" height="240" rx="12" fill="#101b2a"/>
+<rect x="1204" y="53" width="4" height="127" rx="2" fill="#7ba9c9"/>
+<text x="1176" y="116" direction="rtl" text-anchor="start" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#f1f5f9">אריאל דניאלי</text>
+<text x="1176" y="160" direction="rtl" text-anchor="start" font-family="Arial, sans-serif" font-size="23" fill="#bac8d6">פיתוח תוכנה · חיפוש ועיבוד טקסט · כלים ללימוד</text>
+<text x="76" y="156" font-family="Consolas, monospace" font-size="20" fill="#7ba9c9">/ arieldaniely</text>
 </svg>
