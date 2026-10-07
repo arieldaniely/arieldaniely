@@ -33,10 +33,8 @@
 
 ### פעילות ב־GitHub
 
-<p dir="ltr" align="right">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://vercel.app" />
-    <img alt="נתוני הפעילות והדירוג של arieldaniely ב־GitHub" src="https://vercel.app" />
-  </picture>
-</p>
+<!-- PROFILE-STATS:START -->
+<sub>כרטיס הדירוג הכולל מאגרים פרטיים יופיע כאן לאחר הפעלת ההרשאה.</sub>
+<!-- PROFILE-STATS:END -->
 
+</div>
