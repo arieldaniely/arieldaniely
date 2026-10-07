@@ -1,0 +1,79 @@
+name: Update private GitHub stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/profile-stats.yml
+      - scripts/update-profile-stats.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check private stats credential
+        id: credential
+        env:
+          PROFILE_STATS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
+        run: |
+          if [ -z "$PROFILE_STATS_TOKEN" ]; then
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::Add the PROFILE_STATS_TOKEN repository secret with repo and read:user scopes to include private repositories."
+            echo "Private stats are not active. Add PROFILE_STATS_TOKEN under Settings > Secrets and variables > Actions, then run this workflow again." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v6
+        if: steps.credential.outputs.available == 'true'
+        with:
+          ref: main
+
+      - name: Generate light card including private repositories
+        if: steps.credential.outputs.available == 'true'
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
+        with:
+          card: stats
+          options: username=arieldaniely&show_icons=true&hide_rank=false&include_all_commits=false&disable_animations=true&theme=default&title_color=334155&icon_color=527b9a&ring_color=527b9a&hide_border=true
+          path: profile/stats-light.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN }}
+          core_version: ""
+          fail_on_error: "true"
+
+      - name: Generate dark card including private repositories
+        if: steps.credential.outputs.available == 'true'
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
+        with:
+          card: stats
+          options: username=arieldaniely&show_icons=true&hide_rank=false&include_all_commits=false&disable_animations=true&theme=github_dark&title_color=7ba9c9&icon_color=7ba9c9&ring_color=7ba9c9&hide_border=true
+          path: profile/stats-dark.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN }}
+          core_version: ""
+          fail_on_error: "true"
+
+      - name: Update README after successful generation
+        if: steps.credential.outputs.available == 'true'
+        run: python3 scripts/update-profile-stats.py
+
+      - name: Commit generated cards and README
+        if: steps.credential.outputs.available == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/stats-light.svg profile/stats-dark.svg README.md
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Update profile stats including private repositories"
+          git push origin HEAD:main
